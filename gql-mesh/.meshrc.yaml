@@ -1,0 +1,13 @@
+sources:
+  - name: MyGrpcAPI
+    handler:
+      grpc:
+        endpoint: 0.0.0.0:50051
+        protoFilePath: 
+          file: ../protos/product.proto
+          load:
+            includeDirs:
+              - ../protos
+    transforms:
+      - namingConvention:
+          fieldNames: camelCase

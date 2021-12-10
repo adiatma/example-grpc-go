@@ -1,0 +1,15 @@
+{
+  "name": "gql-mesh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.44.1",
+    "@graphql-mesh/grpc": "^0.18.3",
+    "@graphql-mesh/transform-naming-convention": "^0.8.1",
+    "graphql": "^16.0.1"
+  },
+  "scripts": {
+    "dev": "mesh dev"
+  }
+}

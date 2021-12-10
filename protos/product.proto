@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package="example.grpc-go/protos";
+
+package protos;
+
+service ProductService {
+  // get product
+  rpc GetProduct(ProductRequest) returns (ProductResponse) {}
+}
+
+message Product {
+  int32 id = 1;
+  string title = 2;
+  string body = 3;
+}
+
+message ProductRequest {}
+
+message ProductResponse {
+  repeated Product result = 1;
+}
