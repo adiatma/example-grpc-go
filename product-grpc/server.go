@@ -31,7 +31,7 @@ func main() {
 	reflection.Register(server)
 
 	// register service
-	pb.RegisterProductServiceServer(server, handler.Server())
+  pb.RegisterProductServiceServer(server, handler.Server())
 
 	fmt.Printf("Server running in %v", lis.Addr())
 	if err := server.Serve(lis); err != nil {
