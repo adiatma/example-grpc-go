@@ -10,7 +10,7 @@ go run product-grpc/server.go
 
 ```bash
 # run graphql-mesh
-cd gql-mesh;yarn
+cd graphql-mesh;yarn
 yarn dev
 
 # open localhost:4000
