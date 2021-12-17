@@ -26,7 +26,7 @@ func (ps *ps) GetProducts(ctx context.Context, in *pb.Empty) (*pb.ProductsRespon
 		Title: "Lorem ipsume sit amet dolor",
 		Body:  "Lorem ipsume sit amet dolor",
 	})
-  // return the products
+	// return the products
 	return &pb.ProductsResponse{
 		Result: products,
 	}, nil
@@ -42,7 +42,7 @@ func (ps *ps) GetProduct(ctx context.Context, in *pb.ProductId) (*pb.ProductResp
 		}
 	}
 
-  // return error if product == nil
+	// return error if product == nil
 	return nil, errors.New("Error")
 }
 
