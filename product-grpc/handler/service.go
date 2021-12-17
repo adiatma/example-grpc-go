@@ -41,7 +41,6 @@ func (ps *ps) GetProduct(ctx context.Context, in *pb.ProductId) (*pb.ProductResp
 			}, nil
 		}
 	}
-
 	// return error if product == nil
 	return nil, errors.New("Error")
 }
